@@ -7,6 +7,8 @@
 - managing git hooks
 - initializing repos with useful files
 
+This project will replace my earlier [git-commit-conv app written in V](https://github.com/santerijps/git-commit-conv).
+
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
 
