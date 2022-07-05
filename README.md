@@ -1,3 +1,6 @@
 # gut
 
-`gut` (git util) is a git wrapper program that adds some extra features.
+`gut` provides git utilities to help with some redundant tasks, such as
+
+- managing git hooks
+- initializing repos with useful files
