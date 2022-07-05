@@ -65,6 +65,7 @@
   void cmd_help_topic() {
     if (strcmp(cmd.argv[0], "init") == 0) cmd_help_init();
     else if (strcmp(cmd.argv[0], "cc") == 0) cmd_help_cc();
+    else if (strcmp(cmd.argv[0], "lc") == 0) cmd_help_lc();
     else printf("! Undefined topic '%s'", cmd.argv[0]);
   }
 

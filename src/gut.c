@@ -86,6 +86,7 @@ void print_basic_usage() {
     "Commands:\n"
     "  init         \t\tInitialize a new git repo with some extras.\n"
     "  cc    <sub>  \t\tCommit convention utility.\n"
+    "  lc    <sub>  \t\tLicense utility.\n"
     "  help  <topic>\t\tShow helpful information about commands and the app.\n"
     "\n"
     "Options:\n"
