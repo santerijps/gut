@@ -6,6 +6,7 @@
 #include "commands/help.h"
 #include "commands/init.h"
 #include "commands/cc.h"
+#include "commands/lc.h"
 
 int main(int argc, char **argv) {
 
@@ -66,6 +67,8 @@ void check_cmd() {
     cmd_init();
   else if (strcmp(cmd.name, "cc") == 0)
     cmd_cc();
+  else if (strcmp(cmd.name, "lc") == 0)
+    cmd_lc();
   else
     printf("! Invalid input, run '%s help' to read about usage\n", APP_TITLE);
 }

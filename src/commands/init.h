@@ -18,6 +18,10 @@
     #include "../gut.h"
   #endif
 
+  #ifndef CMD_CC_H
+    #include "cc.h"
+  #endif
+
   void cmd_init() {
     int changes = 0;
     if (cmd.argc != 0)

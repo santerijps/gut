@@ -49,6 +49,19 @@
     );
   }
 
+  void cmd_help_lc() {
+    printf(
+      "Usage: %s lc [sub]\n"
+      "\n"
+      "Where sub is one of:\n"
+      "\n"
+      "  list         \tLists all available licenses in gut.\n"
+      "  set <lic>    \tSet the repository license. Must match the names in 'gut lc list'.\n"
+      "\n"
+      , APP_TITLE
+    );
+  }
+
   void cmd_help_topic() {
     if (strcmp(cmd.argv[0], "init") == 0) cmd_help_init();
     else if (strcmp(cmd.argv[0], "cc") == 0) cmd_help_cc();
