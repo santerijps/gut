@@ -72,7 +72,11 @@ void check_cmd() {
 
 void print_basic_usage() {
   printf(
+    "%s %s\n"
+    "------------------------------------------\n"
     "Usage: %s [command] [options]\n"
+    "   or: gut --help\n"
+    "   or: gut --version\n"
     "\n"
     "Description: %s\n"
     "\n"
@@ -81,10 +85,11 @@ void print_basic_usage() {
     "  cc    <sub>  \t\tCommit convention utility.\n"
     "  help  <topic>\t\tShow helpful information about commands and the app.\n"
     "\n"
-    "Basic options:\n"
+    "Options:\n"
     "  -%c, --%s\t\t%s\n"
     "  -%c, --%s\t\t%s\n"
     "\n",
+    APP_TITLE, APP_VERSION,
     APP_TITLE, APP_DESCRIPTION,
     f_help->short_name, f_help->long_name, f_help->description,
     f_version->short_name, f_version->long_name, f_version->description
