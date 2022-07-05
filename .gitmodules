@@ -1,0 +1,6 @@
+[submodule "src/modules/cfs"]
+	path = src/modules/cfs
+	url = https://github.com/santerijps/cfs
+[submodule "src/modules/clargs"]
+	path = src/modules/clargs
+	url = https://github.com/santerijps/clargs
