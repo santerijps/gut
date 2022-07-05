@@ -22,6 +22,28 @@
     #include "help.h"
   #endif
 
+  int create_commit_msg_hook() {
+    char buf[BUFSIZ];
+    memset(buf, 0, BUFSIZ);
+    sprintf(buf, COMMIT_MSG_TEMPLATE, CONVENTIONAL_COMMITS_REGEX, CONVENTIONAL_COMMITS_REGEX);
+    return fs_write_file(commit_msg_path, buf);
+  }
+
+  int set_commit_msg_hook() {
+    char buf[BUFSIZ];
+    memset(buf, 0, BUFSIZ);
+    sprintf(buf, COMMIT_MSG_TEMPLATE, cmd.argv[1], cmd.argv[1]);
+    return fs_write_file(commit_msg_path, buf);
+  }
+
+  int remove_commit_msg_hook() {
+    return fs_remove_file(commit_msg_path);
+  }
+
+  char* get_commit_msg_hook() {
+    return fs_read_file(commit_msg_path);
+  }
+
   void cmd_cc_get() {
     char *hook = NULL;
     if (cmd.argc != 1) printf("! '%s cc get' does not expect any arguments\n", APP_TITLE);

@@ -39,9 +39,5 @@
   void init_app(int argc, char **argv);
   void check_cmd();
   void print_basic_usage();
-  int create_commit_msg_hook();
-  int set_commit_msg_hook();
-  int remove_commit_msg_hook();
-  char* get_commit_msg_hook();
 
 #endif
