@@ -15,7 +15,7 @@
   #endif
 
   const char *APP_TITLE   = "gut";
-  const char *APP_VERSION = "0.1.0";
+  const char *APP_VERSION = "0.2.0";
   const char *APP_DESCRIPTION = "Git utilities to help with some redundant tasks.";
   const char *CONVENTIONAL_COMMITS_REGEX = "^(?:feat|fix|test|docs|refactor)(?:\\(\\w+\\))?: (?:add|update|remove) .+$";
 
