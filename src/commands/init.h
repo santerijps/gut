@@ -31,6 +31,8 @@
         printf("+ Initialized git repository\n");
       if (!fs_path_exists(".gitignore") && fs_create_file(".gitignore") && ++changes)
         printf("+ Created .gitignore\n");
+      if (!fs_path_exists("README.md") && fs_create_file("README.md") && ++changes)
+        printf("+ Created README.md\n");
       if (fs_read_file(commit_msg_path) == NULL && create_commit_msg_hook() && ++changes)
         printf("+ Created commit-msg hook\n");
       if (changes == 0)
